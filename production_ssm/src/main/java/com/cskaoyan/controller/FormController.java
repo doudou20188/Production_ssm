@@ -19,7 +19,7 @@ public class FormController {
 
 	@RequestMapping(value="/{formName}")
 	 public String loginForm(@PathVariable String formName){
-		// 动态跳转页面，处理web-inf 的jsp 文件
+		// 动态跳转页面，处理jsp跳转
 		System.out.println(formName);
 		return  formName;
 		//return "/WEB-INF/jsp/"+formName+".jsp";
